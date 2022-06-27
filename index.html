@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="icon" href="img/css.png">
+    <title>Css || Flex </title>
+</head>
+<body>
+
+   <div class="flex">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4</div>
+   </div>
+
+
+
+     <ul class="flex-container">
+        <li class="flex-item text-center">HOME</li>
+        <li class="flex-item text-center">EMPRESA</li>
+        <li class="flex-item text-center">PRODUTOS</li>
+        <li class="flex-item text-center">CURSOS</li>
+        <li class="flex-item text-center">ALUNOS</li>
+    </ul> 
+     <ul class="flex-container row-reverse">
+        <li class="flex-item text-center">HOME</li>
+        <li class="flex-item text-center">EMPRESA</li>
+        <li class="flex-item text-center">PRODUTOS</li>
+        <li class="flex-item text-center">CURSOS</li>
+        <li class="flex-item text-center">ALUNOS</li>
+    </ul>
+     <ul class="flex-container  column">
+        <li class="flex-item text-center">HOME</li>
+        <li class="flex-item text-center">EMPRESA</li>
+        <li class="flex-item text-center">PRODUTOS</li>
+        <li class="flex-item text-center">CURSOS</li>
+        <li class="flex-item text-center">ALUNOS</li>
+    </ul> 
+     <ul class="flex-container  column-reverse">
+        <li class="flex-item text-center">HOME</li>
+        <li class="flex-item text-center">EMPRESA</li>
+        <li class="flex-item text-center">PRODUTOS</li>
+        <li class="flex-item text-center">CURSOS</li>
+        <li class="flex-item text-center">ALUNOS</li>
+    </ul>  
+
+    <!-- trabalhando  com flex wrap -->
+
+   <h2>now wrap</h2>
+   
+   <div class="flex-container-1 nowrap">
+
+    <div class="item-1 blue  text-center">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1 red text-center ">texto</div>
+    <div class="item-1 blue   text-center ">texto</div>
+   
+   </div>
+<h1>wrap</h1>
+<div class="flex-container-1 wrap">
+
+    <div class="item-1 blue  text-center">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1  red text-center ">texto</div>
+    <div class="item-1  blue  text-center ">texto</div>
+    
+   </div>
+<h1>wrap-reverse</h1>
+<div class="flex-container-1 wrap-reverse">
+
+    <div class="item-1 blue  text-center">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1 red text-center ">texto</div>
+    <div class="item-1 blue text-center ">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1 red text-center ">texto</div>
+    <div class="item-1 blue text-center ">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1 red  text-center ">texto</div>
+    <div class="item-1 gray text-center ">texto</div>
+    <div class="item-1 blue text-center ">texto</div>
+    <div class="item-1  red text-center ">texto</div>
+   </div>
+
+   <!-- flex   flow  atalho  para felx-direction e wrap nowrap -->
+   <div class="flex-container-3 default">
+      <div class="item-3">item</div>
+      <div class="item-3">item</div>
+      <div class="item-3">item</div>
+   </div>  
+   <h1>Defautlt: nowrap</h1>
+   <div class="flex-container-3 default">
+      <div class="item-3">item</div>
+      <div class="item-3">item</div>
+      <div class="item-3">item</div>
+   </div>  
+   <h1>wrap</h1>
+   <div class="flex-container-3 wrap">
+      <div class="item-3">item-1</div>
+      <div class="item-3">item-2</div>
+      <div class="item-3">item-3</div>
+      <div class="item-3">item-4</div>
+      <div class="item-3">item-5</div>
+      <div class="item-3">item-6</div>
+    </div>  
+    <h1>wrap-reverse</h1>
+   <div class="flex-container-3 wrap-reverse">
+      <div class="item-3">item-1</div>
+      <div class="item-3">item-2</div>
+      <div class="item-3">item-3</div>
+      <div class="item-3">item-4</div>
+      <div class="item-3">item-5</div>
+      <div class="item-3">item-6</div>
+    </div>  
+    <h1> row-reverse nowrap</h1>
+   <div class="flex-container-3 r-nowrap">
+      <div class="item-3">item-1</div>
+      <div class="item-3">item-2</div>
+      <div class="item-3">item-3</div>
+      <div class="item-3">item-4</div>
+      <div class="item-3">item-5</div>
+      <div class="item-3">item-6</div>
+    </div>  
+    <h1> row-reverse wrap</h1>
+   <div class="flex-container-3 r-wrap">
+      <div class="item-3">item-1</div>
+      <div class="item-3">item-2</div>
+      <div class="item-3">item-3</div>
+      <div class="item-3">item-4</div>
+      <div class="item-3">item-5</div>
+      <div class="item-3">item-6</div>
+      <div class="item-3">item-7</div>
+      <div class="item-3">item-8</div>
+    </div>  
+    <h1> row-reverse wrap-reverse</h1>
+   <div class="flex-container-3 rr-wrap">
+      <div class="item-3">item-1</div>
+      <div class="item-3">item-2</div>
+      <div class="item-3">item-3</div>
+      <div class="item-3">item-4</div>
+      <div class="item-3">item-5</div>
+      <div class="item-3">item-6</div>
+      <div class="item-3">item-7</div>
+      <div class="item-3">item-8</div>
+    </div>  
+   
+    <section class="container flex-start">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+    </section>
+  
+    <section class="container flex-center">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+    </section>
+    </section>
+ 
+    <section class="container flex-end">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+    </section>
+
+    <section class="container space-between">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+ 
+    <section class="container space-around">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+
+    <section class="container flex-start column">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+ 
+    <section class="container flex-end column">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+  
+    <section class="container flex-center column">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+
+    <section class="container space-between column">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+
+
+    <section class="container space-around column">
+      <div class="item-4">item-1</div>
+      <div class="item-4">item-2</div>
+      <div class="item-4">estudos</div>
+      <div class="item-4">5</div>
+      <div class="item-4">login</div>
+    </section>
+
+
+
+
+</body>
+</html>

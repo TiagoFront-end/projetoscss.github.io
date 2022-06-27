@@ -1,0 +1,230 @@
+
+
+.flex {
+    max-width:300px;
+    padding: 10px;
+    border:2px  solid #000;
+    display:flex;
+
+  
+}
+.item {
+    background-color: blue;
+    margin: 5px;
+}
+
+
+.text-center {
+    text-align: center;
+
+    
+}
+
+.text-left{
+    text-align: left;
+}
+.text-end{
+    text-align: end;
+}
+.text-right{
+    text-align: end;
+}
+
+
+
+ .flex-container {
+    margin:0;
+    padding: 0;
+    display:flex;
+    list-style:none;
+  
+}
+
+.flex-item{
+    background-color: blue;
+    color:#fff;
+    height: 50px;
+    width: 80px;
+    line-height: 50px;
+    font-size: 12px;
+    margin:5px;
+    margin-bottom: 5px;
+
+
+}
+.row {
+flex-direction: row;
+
+
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+  
+}
+.row-reverse li {
+
+    background-color: red;
+    color:orange;
+    /* position:relative;
+    top:-55px; */
+}
+
+
+ .column {
+ 
+    float:left;
+flex-direction: column;
+}
+.column li {
+   background-color: gray;
+    }
+.column-reverse li {
+background-color: orange;
+position:relative;
+}
+.column-reverse  {
+flex-direction: column-reverse;
+
+} 
+
+/*  flex  wrap  responsavel  se os itens devem ou nao quebrar as linhas   mais
+conhecido  por  nowrap: wrap:  permite  quebra  linha quando um dos flex nao
+puder mais ser comportado passa  para linha de baixo
+  
+  
+*/
+
+.flex-container-1 {
+    display:flex;
+    /* height: 100px; */
+    border: 2px solid blue;
+    max-width: 300px;
+    flex-direction: column;
+ 
+   
+
+}
+
+.item-1 {
+    font-size: 33px;
+    height: 50%;
+   width: 100px;
+  line-height: 60px;
+  min-width: 300px;
+  
+
+}
+
+.nowrap {
+    flex-wrap:nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.gray{
+    background-color: gray;
+}
+
+/* flex-flow  atalha para  flex-direction e wrap nowrap */
+
+.flex-container-3{
+    display:flex;
+    flex-flow: row nowrap;
+    border: 1px  solid #000;
+    max-width: 400px;
+    height: 250px;
+}
+
+.default{
+    flex-flow: row nowrap;
+}
+
+.wrap {
+    flex-flow: row wrap;
+}
+.wrap-reverse {
+    flex-flow: row wrap-reverse;
+}
+
+.r-nowrap{
+    flex-flow: row-reverse nowrap;
+}
+.r-wrap{
+    flex-flow:row-reverse wrap;
+}
+/* neste  caso so faz  sentido se  alterar a  
+altura no flex-container
+ */
+.rr-wrap{
+    flex-flow:column-reverse wrap-reverse;
+}
+
+.item-3 {
+    background-color: brown;
+    margin:5px;
+    color:#000;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.container {
+    width: 500px;
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+    float: left;
+    
+
+}
+.item-4{
+    background-color:chartreuse;
+    margin: 4px;
+    text-align: center;
+    color: black;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-end {
+    justify-content: end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.column{
+justify-content: column;
+min-height: 200px;
+
+}
+
+/* tipos  de  alinhamentos,
+ center: ao  centro da pagina
+ strach: default (padrao)  crescem igualmente
+ flex-start: no inicio da pagina*/
+
